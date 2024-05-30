@@ -1,0 +1,44 @@
+.wordDisplay {
+  margin: 60px auto 0 auto;
+  width: 820px;
+  height: 420px;
+  background-color: #CDE8E5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.describe {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  font-size: 20px;
+  background-color: #b7b7b7;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wordDescribe {
+  font-size: 40px;
+  width: 400px;
+  max-height: 300px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.button {
+  width: 600px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  font-size: 25px;
+  cursor: pointer;
+}

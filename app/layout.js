@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import Link from "next/link";
+import "./css/globals.css";
+import './css/layout.css'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+      <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Montserrat:wght@700&display=swap" rel="stylesheet"></link>
+      </head>
+      <body className={inter.className}>
+        <header>
+          <h2 className="header"><Link className="color" href={'/'}>QuizAI</Link></h2>
+        </header>
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
